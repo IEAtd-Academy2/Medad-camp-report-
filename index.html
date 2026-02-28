@@ -171,24 +171,28 @@
         <!-- Action Log (Changelog) -->
         <section class="bg-white rounded-2xl shadow-sm p-6 print-shadow-none">
             <h2 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <i class="fa-solid fa-list-check text-brand-500"></i> سجل القرارات والأحداث (Log)
+                <i class="fa-solid fa-list-check text-brand-500"></i> سجل القرارات والأحداث الزمني (Log)
             </h2>
             
-            <div class="relative border-r-2 border-gray-200 pr-6 space-y-6">
+            <div class="relative border-r-2 border-gray-200 pr-6 space-y-8"> <!-- Increased spacing between logs -->
                 
-                <!-- Log Item 4 (New - Critical) -->
+                <!-- Log Item 4 (Critical) -->
                 <div class="relative">
                     <span class="absolute -right-[35px] top-1 bg-red-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-hand"></i>
                     </span>
-                    <div class="bg-red-50 rounded-lg p-4 border border-red-200">
+                    <div class="bg-red-50 rounded-lg p-4 border border-red-200 shadow-sm">
                         <div class="flex justify-between items-start mb-2">
                             <h4 class="font-bold text-red-800">توقف اضطراري للحملات (مشكلة ميزانية)</h4>
-                            <span class="text-xs font-bold bg-red-200 text-red-800 px-2 py-1 rounded">التحديث الرابع (السبت ظهراً)</span>
+                            <span class="text-xs font-bold bg-red-200 text-red-800 px-2 py-1 rounded whitespace-nowrap">السبت - 1:00 ظهراً</span>
                         </div>
                         <p class="text-sm text-gray-700 mb-2">
-                            توقفت حملة انستقرام الساعة 1 ظهراً بعد الوصول لصرف 380 ج.م واستقرار تكلفة الرسالة عند مستوى ممتاز (47 ج.م). حملة تيك توك لا تزال متوقفة منذ الجمعة لنفس السبب. تم طلب الدفع من الإدارة.
+                            توقفت حملة انستقرام بعد الوصول لصرف 380 ج.م واستقرار تكلفة الرسالة عند مستوى ممتاز (47 ج.م).
                         </p>
+                        <ul class="text-sm text-red-700 list-disc list-inside mt-2 font-semibold">
+                            <li>الحساب الإعلاني توقف لعدم توفر رصيد (تم طلب الدفع).</li>
+                            <li>حملة تيك توك لا تزال متوقفة منذ الجمعة لنفس السبب.</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -197,24 +201,61 @@
                     <span class="absolute -right-[35px] top-1 bg-green-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-arrow-trend-up"></i>
                     </span>
-                    <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
                         <div class="flex justify-between items-start mb-2">
-                            <h4 class="font-bold text-gray-800">تحسن الأداء وأزمة الاستجابة (6:00 صباحاً)</h4>
-                            <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded">التحديث الثالث</span>
+                            <h4 class="font-bold text-gray-800">تحسن الأداء وظهور أزمة استجابة</h4>
+                            <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">السبت - 6:00 صباحاً</span>
                         </div>
-                        <p class="text-sm text-gray-600 mb-2">
-                            انخفاض تكلفة الرسالة إلى 47 ج.م (الإجمالي 8 رسائل). استمرار سؤال العملاء عن الاعتماد. ظهور مشكلة في تأخير رد المبيعات لأكثر من 4 ساعات.
+                        <p class="text-sm text-gray-700 mb-2">
+                            انخفاض ممتاز في تكلفة الرسالة إلى 47 ج.م، وارتفاع معدل النقر (CTR) إلى 0.79%.
                         </p>
+                         <ul class="text-sm text-gray-600 list-disc list-inside mt-2">
+                            <li><strong>إجمالي الرسائل:</strong> 8 رسائل (وصول 3 رسائل جديدة).</li>
+                            <li><strong>الاعتراضات:</strong> استمرار سؤال العملاء بوضوح عن الاعتماد وموقع الأكاديمية.</li>
+                            <li><span class="text-red-600 font-bold"><i class="fa-solid fa-triangle-exclamation"></i> أزمة مبيعات:</span> تأخير في الرد على 3 عملاء (منهم 2 مر عليهم أكثر من 4 ساعات).</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Log Item 2 & 1 hidden for brevity in this view, but kept in structure -->
-                <div class="relative opacity-70">
-                    <span class="absolute -right-[35px] top-1 bg-gray-400 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white">
-                        <i class="fa-solid fa-history"></i>
+                <!-- Log Item 2 -->
+                <div class="relative">
+                    <span class="absolute -right-[35px] top-1 bg-blue-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                        <i class="fa-solid fa-chart-line"></i>
                     </span>
-                    <div class="bg-gray-50 rounded-lg p-3">
-                        <p class="text-sm text-gray-500 italic">... تم إخفاء التحديثات السابقة (تعديل الاستهداف وحصر iOS) للتركيز على الوضع الحالي ...</p>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-gray-800">تحليل الأداء بعد 9 ساعات من الإطلاق</h4>
+                            <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">السبت - 12:00 صباحاً</span>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-2">
+                            الوصول إلى 5 رسائل بإجمالي صرف 313 ج.م (62 ج.م للرسالة).
+                        </p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mt-2">
+                            <li><strong>التفاعل:</strong> 40% (2 متفاعلين من أصل 5).</li>
+                            <li><strong>الـ CTR:</strong> 0.58%.</li>
+                            <li><strong>الاعتراض الرئيسي:</strong> "الاعتماد" (أكاديمية النخبة). عميلة فقدت الاهتمام بعد معرفة الاعتماد.</li>
+                            <li><strong>فرصة بيع (Hot Lead):</strong> عميل سأل عن درجات أخرى (الماجستير) وإمكانية التقسيط.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Log Item 1 -->
+                <div class="relative">
+                    <span class="absolute -right-[35px] top-1 bg-brand-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                        <i class="fa-solid fa-wrench"></i>
+                    </span>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-gray-800">تعديل الاستهداف الجذري وبداية الحملة</h4>
+                            <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">الجمعة - (بداية الحملة)</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-2">
+                            بعد صرف 111 ج.م، تم استقبال رسالة من عميل غير مستهدف (هندي الجنسية). تم التدخل الفوري لتحسين جودة الرصاص (Leads).
+                        </p>
+                        <div class="flex gap-2 text-xs font-semibold mt-2">
+                            <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded">حصر الاستهداف على أجهزة iOS (آيفون)</span>
+                            <span class="bg-red-100 text-red-700 px-2 py-1 rounded">إغلاق Audience Network وفيسبوك</span>
+                        </div>
                     </div>
                 </div>
 
