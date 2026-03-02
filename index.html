@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لوحة تقارير حملة "مداد" رمضان - متوقفة</title>
+    <title>لوحة تقارير حملة "مداد" رمضان - نشطة</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Cairo -->
@@ -55,21 +55,21 @@
 
     <div class="max-w-6xl mx-auto space-y-6">
         
-        <!-- Urgent Global Alert -->
-        <div class="bg-red-600 text-white rounded-xl shadow-md p-4 flex items-center justify-between print-shadow-none animate-pulse">
+        <!-- Success Global Alert (Updated) -->
+        <div class="bg-green-600 text-white rounded-xl shadow-md p-4 flex items-center justify-between print-shadow-none">
             <div class="flex items-center gap-3">
-                <i class="fa-solid fa-circle-exclamation text-3xl"></i>
+                <i class="fa-solid fa-circle-check text-3xl"></i>
                 <div>
-                    <h2 class="text-xl font-bold">الحملات متوقفة (مطلوب دفع فوري)</h2>
-                    <p class="text-sm opacity-90">توقف الحملات يؤثر سلباً على أداء الخوارزميات (Learning Phase) وقد يرفع التكلفة عند إعادة التشغيل.</p>
+                    <h2 class="text-xl font-bold">تم الدفع - حملة إنستقرام نشطة الآن</h2>
+                    <p class="text-sm opacity-90">تم استئناف حملة إنستقرام بنجاح بعد سداد المديونية. (حملة تيك توك لا تزال بانتظار الدفع).</p>
                 </div>
             </div>
         </div>
 
         <!-- Header -->
-        <header class="bg-white rounded-2xl shadow-sm p-6 flex flex-col md:flex-row justify-between items-start md:items-center border-t-4 border-red-500 print-shadow-none relative overflow-hidden">
+        <header class="bg-white rounded-2xl shadow-sm p-6 flex flex-col md:flex-row justify-between items-start md:items-center border-t-4 border-green-500 print-shadow-none relative overflow-hidden">
             <!-- Decorative Ramadan element -->
-            <div class="absolute top-0 left-0 opacity-10 text-red-500 text-9xl -translate-x-1/4 -translate-y-1/4 pointer-events-none">
+            <div class="absolute top-0 left-0 opacity-10 text-green-500 text-9xl -translate-x-1/4 -translate-y-1/4 pointer-events-none">
                 <i class="fa-solid fa-moon"></i>
             </div>
 
@@ -78,14 +78,14 @@
                     <span class="text-ramadan"><i class="fa-solid fa-lantern"></i></span> 
                     حملة "مداد" الرمضانية
                 </h1>
-                <p class="text-gray-500 font-semibold">تقرير الأداء الحي - التحديث الرابع (السبت - 1:00 ظهراً)</p>
+                <p class="text-gray-500 font-semibold">تقرير الأداء الحي - التحديث الخامس (الاثنين 2 مارس 2026)</p>
             </div>
             <div class="mt-4 md:mt-0 flex gap-3 no-print">
                 <button onclick="window.print()" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg font-semibold transition flex items-center gap-2">
                     <i class="fa-solid fa-print"></i> طباعة / PDF للقسم المالي
                 </button>
-                <div class="bg-red-50 text-red-600 px-5 py-2.5 rounded-lg font-semibold border border-red-200 flex items-center gap-2">
-                    <i class="fa-solid fa-pause"></i> حالة الحملات: متوقفة
+                <div class="bg-green-50 text-green-600 px-5 py-2.5 rounded-lg font-semibold border border-green-200 flex items-center gap-2">
+                    <i class="fa-solid fa-play"></i> حالة الحملات: إنستقرام نشط
                 </div>
             </div>
         </header>
@@ -115,11 +115,11 @@
             
             <!-- Instagram Card -->
             <div class="bg-white rounded-2xl shadow-sm overflow-hidden print-shadow-none relative">
-                <div class="absolute inset-0 bg-red-50 opacity-50 pointer-events-none"></div>
-                <div class="bg-gradient-to-r from-pink-500 to-purple-500 p-4 opacity-80">
+                <!-- Removed the red overlay to indicate it's active -->
+                <div class="bg-gradient-to-r from-pink-500 to-purple-500 p-4 opacity-90">
                     <h2 class="text-white text-xl font-bold flex items-center justify-between">
                         <span class="flex items-center gap-2"><i class="fa-brands fa-instagram text-2xl"></i> أداء انستقرام</span>
-                        <span class="bg-red-600 text-white text-xs px-2 py-1 rounded">متوقف (الساعة 1 ظهراً)</span>
+                        <span class="bg-green-500 text-white text-xs px-2 py-1 rounded shadow-sm">نشط (تم الدفع)</span>
                     </h2>
                 </div>
                 <div class="p-6 relative z-10">
@@ -135,14 +135,14 @@
                     </div>
                     
                     <div class="space-y-4">
-                        <div class="bg-blue-50 border-r-4 border-blue-500 p-3 rounded text-sm text-blue-800">
-                            <i class="fa-solid fa-circle-info"></i> <strong>ملاحظة تسويقية:</strong> التكلفة (47 جنيه) ممتازة ومستقرة. توقف الحساب الآن بسبب الرصيد يهدد بخسارة هذا الاستقرار عند إعادة التشغيل.
+                        <div class="bg-green-50 border-r-4 border-green-500 p-3 rounded text-sm text-green-800">
+                            <i class="fa-solid fa-circle-check"></i> <strong>تحديث الإدارة:</strong> تم استئناف الحملة اليوم (الاثنين). نراقب الآن أداء الخوارزميات ومدى حفاظها على تكلفة الـ 47 ج.م بعد فترة التوقف.
                         </div>
                         
                         <h4 class="font-bold text-gray-800 border-b pb-2 mt-4">مطلوب من فريق المبيعات فوراً:</h4>
                         <div class="flex flex-col gap-2 text-sm">
-                            <p class="text-gray-600"><i class="fa-solid fa-check-circle text-green-500"></i> استغلال فترة توقف الإعلانات لإغلاق الصفقات مع الـ 8 عملاء الحاليين (خاصة المهتم بالماجستير والتقسيط).</p>
-                            <p class="text-gray-600"><i class="fa-solid fa-check-circle text-green-500"></i> معالجة تأخير الردود السابقة.</p>
+                            <p class="text-gray-600"><i class="fa-solid fa-bolt text-yellow-500"></i> الاستعداد لاستقبال الرسائل الجديدة بعد عودة الحملة.</p>
+                            <p class="text-gray-600"><i class="fa-solid fa-check-circle text-green-500"></i> إغلاق الصفقات المعلقة (خاصة المهتم بالماجستير والتقسيط).</p>
                         </div>
                     </div>
                 </div>
@@ -159,10 +159,10 @@
                 </div>
                 <div class="p-6 flex flex-col justify-center items-center h-[calc(100%-4rem)] min-h-[250px] text-center bg-white z-10 relative">
                     <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-3xl mb-4">
-                        <i class="fa-solid fa-ban"></i>
+                        <i class="fa-solid fa-hourglass-half"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-2">تعطل انطلاق الحملة</h3>
-                    <p class="text-gray-500 text-sm max-w-xs">الحملة متوقفة منذ يوم الجمعة بانتظار إتمام الدفع وتغذية الحساب. نخسر حالياً ذروة التفاعل الرمضانية.</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">لا يزال بانتظار الدفع</h3>
+                    <p class="text-gray-500 text-sm max-w-xs">الحملة متوقفة منذ يوم الجمعة بانتظار إتمام الدفع. نخسر حالياً ذروة التفاعل الرمضانية على هذه المنصة.</p>
                 </div>
             </div>
 
@@ -176,20 +176,40 @@
             
             <div class="relative border-r-2 border-gray-200 pr-6 space-y-8"> <!-- Increased spacing between logs -->
                 
+                <!-- Log Item 5 (New - Monday) -->
+                <div class="relative">
+                    <span class="absolute -right-[35px] top-1 bg-green-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                    </span>
+                    <div class="bg-green-50 rounded-lg p-4 border border-green-200 shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-green-800">سداد المديونية وتنشيط إنستقرام</h4>
+                            <span class="text-xs font-bold bg-green-200 text-green-800 px-2 py-1 rounded whitespace-nowrap">الاثنين 2 مارس</span>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-2">
+                            تم دفع مديونية الإعلانات وإعادة تنشيط حملة إنستقرام بنجاح.
+                        </p>
+                        <ul class="text-sm text-green-700 list-disc list-inside mt-2 font-semibold">
+                            <li>بدأت إعلانات إنستقرام بالظهور مجدداً وجاري مراقبة استقرار الخوارزمية.</li>
+                            <li>حملة تيك توك لا تزال متوقفة لحين توفير الميزانية الخاصة بها.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <!-- Log Item 4 (Critical) -->
                 <div class="relative">
                     <span class="absolute -right-[35px] top-1 bg-red-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-hand"></i>
                     </span>
-                    <div class="bg-red-50 rounded-lg p-4 border border-red-200 shadow-sm">
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm opacity-80">
                         <div class="flex justify-between items-start mb-2">
-                            <h4 class="font-bold text-red-800">توقف اضطراري للحملات (مشكلة ميزانية)</h4>
-                            <span class="text-xs font-bold bg-red-200 text-red-800 px-2 py-1 rounded whitespace-nowrap">السبت - 1:00 ظهراً</span>
+                            <h4 class="font-bold text-gray-800">توقف اضطراري للحملات (مشكلة ميزانية)</h4>
+                            <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">السبت - 1:00 ظهراً</span>
                         </div>
                         <p class="text-sm text-gray-700 mb-2">
                             توقفت حملة انستقرام بعد الوصول لصرف 380 ج.م واستقرار تكلفة الرسالة عند مستوى ممتاز (47 ج.م).
                         </p>
-                        <ul class="text-sm text-red-700 list-disc list-inside mt-2 font-semibold">
+                        <ul class="text-sm text-gray-600 list-disc list-inside mt-2 font-semibold">
                             <li>الحساب الإعلاني توقف لعدم توفر رصيد (تم طلب الدفع).</li>
                             <li>حملة تيك توك لا تزال متوقفة منذ الجمعة لنفس السبب.</li>
                         </ul>
@@ -198,10 +218,10 @@
 
                 <!-- Log Item 3 -->
                 <div class="relative">
-                    <span class="absolute -right-[35px] top-1 bg-green-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                    <span class="absolute -right-[35px] top-1 bg-gray-400 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-arrow-trend-up"></i>
                     </span>
-                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm opacity-80">
                         <div class="flex justify-between items-start mb-2">
                             <h4 class="font-bold text-gray-800">تحسن الأداء وظهور أزمة استجابة</h4>
                             <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">السبت - 6:00 صباحاً</span>
@@ -219,10 +239,10 @@
 
                 <!-- Log Item 2 -->
                 <div class="relative">
-                    <span class="absolute -right-[35px] top-1 bg-blue-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                    <span class="absolute -right-[35px] top-1 bg-gray-400 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-chart-line"></i>
                     </span>
-                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm opacity-80">
                         <div class="flex justify-between items-start mb-2">
                             <h4 class="font-bold text-gray-800">تحليل الأداء بعد 9 ساعات من الإطلاق</h4>
                             <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">السبت - 12:00 صباحاً</span>
@@ -241,10 +261,10 @@
 
                 <!-- Log Item 1 -->
                 <div class="relative">
-                    <span class="absolute -right-[35px] top-1 bg-brand-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                    <span class="absolute -right-[35px] top-1 bg-gray-400 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-wrench"></i>
                     </span>
-                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm opacity-80">
                         <div class="flex justify-between items-start mb-2">
                             <h4 class="font-bold text-gray-800">تعديل الاستهداف الجذري وبداية الحملة</h4>
                             <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">الجمعة - (بداية الحملة)</span>
@@ -266,5 +286,4 @@
 
 </body>
 </html>
-
 
