@@ -48,6 +48,10 @@
                 box-shadow: none !important;
                 border: 1px solid #e2e8f0;
             }
+            /* Ensure page breaks are handled gracefully */
+            .log-item {
+                page-break-inside: avoid;
+            }
         }
     </style>
 </head>
@@ -67,14 +71,14 @@
                     <span class="text-ramadan"><i class="fa-solid fa-lantern"></i></span> 
                     حملة "مداد" الرمضانية
                 </h1>
-                <p class="text-gray-500 font-semibold">تقرير الأداء الحي - التحديث السابع (الثلاثاء - 1:15 ظهراً)</p>
+                <p class="text-gray-500 font-semibold">تقرير الأداء الحي - السجل الشامل (الثلاثاء - 1:13 ظهراً)</p>
             </div>
             <div class="mt-4 md:mt-0 flex gap-3 no-print">
                 <button onclick="window.print()" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-5 py-2.5 rounded-lg font-semibold transition flex items-center gap-2">
-                    <i class="fa-solid fa-print"></i> طباعة / PDF 
+                    <i class="fa-solid fa-print"></i> طباعة السجل الكامل
                 </button>
                 <div class="bg-brand-50 text-brand-600 px-5 py-2.5 rounded-lg font-semibold border border-brand-100 flex items-center gap-2">
-                    <i class="fa-solid fa-play animate-pulse"></i> انستقرام (نشط) | تيك توك (متوقف للتحسين)
+                    <i class="fa-solid fa-play animate-pulse"></i> انستقرام (نشط) | تيك توك (متوقف)
                 </div>
             </div>
         </header>
@@ -134,27 +138,13 @@
                         <div class="bg-orange-50 border-r-4 border-orange-500 p-3 rounded text-sm text-orange-800 mb-3 flex items-start gap-2">
                             <i class="fa-solid fa-chart-bar mt-1"></i>
                             <div>
-                                <strong>تحذير تسويقي (CPM عالي):</strong> تكلفة الألف ظهور وصلت إلى <strong>309 ج.م</strong>. 
-                                <p class="text-xs mt-1 text-gray-600">التفسير: المنافسة شرسة على مستخدمي iOS في السعودية خلال رمضان، والـ CTR الضعيف يزيد التكلفة. <br> <strong>التوصية:</strong> تجهيز إعلان (Creative) جديد لاختباره إذا استمر الـ CPL في الارتفاع.</p>
+                                <strong>تحذير تسويقي (CPM عالي):</strong> تكلفة الألف ظهور <strong>309 ج.م</strong>. 
+                                <p class="text-xs mt-1 text-gray-600">التفسير: المنافسة شرسة (رمضان/iOS). الـ CTR الضعيف يزيد التكلفة. <strong>التوصية:</strong> تجهيز إعلان بديل.</p>
                             </div>
                         </div>
 
                         <div class="bg-red-50 border-r-4 border-red-500 p-3 rounded text-sm text-red-700 mb-3">
-                            <i class="fa-solid fa-triangle-exclamation text-lg"></i> <strong>تنبيه للمبيعات:</strong> مشكلة تأخير الردود ليلاً مستمرة. يجب معالجة الـ 3 رسائل المعلقة بأقصى سرعة.
-                        </div>
-                        
-                        <h4 class="font-bold text-gray-800 border-b pb-2 mt-4">أهداف التحويل (الهدف: 1 مبيعة):</h4>
-                        <div class="flex flex-col gap-2 text-sm">
-                            <div class="flex justify-between items-center bg-gray-50 p-2 rounded">
-                                <span>محقق: 12 رسالة</span>
-                                <div>
-                                    <span class="font-bold">المطلوب: 34 رسالة</span>
-                                    <span class="text-xs text-gray-400 mr-2">(متبقي 22)</span>
-                                </div>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-2.5">
-                                <div class="bg-pink-500 h-2.5 rounded-full" style="width: 35%"></div>
-                            </div>
+                            <i class="fa-solid fa-triangle-exclamation text-lg"></i> <strong>تنبيه للمبيعات:</strong> مشكلة تأخير الردود ليلاً (3 رسائل معلقة) يجب معالجتها.
                         </div>
                     </div>
                 </div>
@@ -191,8 +181,8 @@
                     
                     <div class="bg-red-50 border-r-4 border-red-500 p-4 rounded text-sm text-gray-700">
                         <h4 class="font-bold text-red-800 border-b border-red-200 pb-1 mb-2"><i class="fa-solid fa-magnifying-glass-chart"></i> تحليل الـ Drop-off:</h4>
-                        <p class="mb-2"><strong>15 شخص</strong> فتحوا الفورم ولم يسجل <strong>أي شخص</strong> بياناته.</p>
-                        <p class="text-xs font-bold text-gray-800">جاري العمل على:</p>
+                        <p class="mb-2"><strong>15 شخص</strong> فتحوا الفورم ولم يسجلوا بياناتهم.</p>
+                        <p class="text-xs font-bold text-gray-800">خطة التحسين:</p>
                         <ul class="list-disc list-inside text-xs text-gray-600 space-y-1">
                             <li>تقصير الفورم لـ (الاسم + الواتساب) فقط.</li>
                             <li>تجهيز فيديو (UGC) بهوك أقوى لرفع الـ CTR.</li>
@@ -203,16 +193,16 @@
 
         </div>
 
-        <!-- Action Log (Changelog) -->
+        <!-- Action Log (Changelog) - FULL HISTORY -->
         <section class="bg-white rounded-2xl shadow-sm p-6 print-shadow-none">
-            <h2 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <i class="fa-solid fa-list-check text-brand-500"></i> سجل القرارات والأحداث الزمني (Log)
+            <h2 class="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2 border-b pb-3">
+                <i class="fa-solid fa-clock-rotate-left text-brand-500"></i> السجل الزمني الكامل للقرارات والأحداث
             </h2>
             
             <div class="relative border-r-2 border-gray-200 pr-6 space-y-8">
                 
-                <!-- Log Item 7 (New - Insta Update) -->
-                <div class="relative">
+                <!-- Log Item 7 (Insta Update) -->
+                <div class="relative log-item">
                     <span class="absolute -right-[35px] top-1 bg-orange-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-eye"></i>
                     </span>
@@ -232,44 +222,119 @@
                 </div>
 
                 <!-- Log Item 6 (TikTok Crisis) -->
-                <div class="relative">
+                <div class="relative log-item">
                     <span class="absolute -right-[35px] top-1 bg-red-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-pause"></i>
                     </span>
-                    <div class="bg-red-50 rounded-lg p-4 border border-red-200 shadow-sm opacity-90">
+                    <div class="bg-red-50 rounded-lg p-4 border border-red-200 shadow-sm">
                         <div class="flex justify-between items-start mb-2">
                             <h4 class="font-bold text-red-800">تحليل أداء تيك توك وإيقاف الحملة للتحسين</h4>
                             <span class="text-xs font-bold bg-red-200 text-red-800 px-2 py-1 rounded whitespace-nowrap">الثلاثاء - 12:00 ظهراً</span>
                         </div>
                         <p class="text-sm text-gray-700 mb-2">
-                            صرف 470 ج.م بـ 0 ليدز. المشكلة: 15 زائر للفورم بدون أي تسجيل (عزوف تام). الـ CTR ضعيف 0.53%. تم الإيقاف للتحسين وتقصير الفورم.
+                            صرف 470 ج.م بـ 0 ليدز. المشكلة: 15 زائر للفورم بدون أي تسجيل (عزوف تام). الـ CTR ضعيف 0.53%.
                         </p>
+                        <ul class="text-sm text-red-700 list-disc list-inside mt-2 font-semibold">
+                            <li><strong>قرار فوري:</strong> إيقاف الإعلان لمنع إهدار الميزانية.</li>
+                            <li><strong>خطة التحسين:</strong> تقصير الفورم للاسم ورقم الواتساب فقط، وتجهيز فيديو جديد.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <!-- Log Item 5 -->
-                <div class="relative">
+                <!-- Log Item 5 (Resumption & Night Shift Issue) -->
+                <div class="relative log-item">
                     <span class="absolute -right-[35px] top-1 bg-yellow-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
                         <i class="fa-solid fa-bell"></i>
                     </span>
-                    <div class="bg-white rounded-lg p-4 border border-gray-200 shadow-sm opacity-80">
+                    <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-200 shadow-sm">
                         <div class="flex justify-between items-start mb-2">
-                            <h4 class="font-bold text-gray-800">عودة الحملات واستمرار أزمة الرد ليلاً</h4>
-                            <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">الإثنين - 11:00 مساءً</span>
+                            <h4 class="font-bold text-yellow-800">عودة الحملات واستمرار أزمة الرد ليلاً</h4>
+                            <span class="text-xs font-bold bg-yellow-200 text-yellow-800 px-2 py-1 rounded whitespace-nowrap">الإثنين - 11:00 مساءً</span>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-2">
+                            تم حل مشكلة الدفع وعودة الحملات. صرف انستقرام وصل 700 ج.م بـ 12 رسالة. تأكيد وصول رسالة مهتمة جداً من الـ 4 الجدد.
+                        </p>
+                        <ul class="text-sm text-gray-700 list-disc list-inside mt-2 font-semibold">
+                            <li><span class="text-red-600">تأثير التوقف:</span> ارتفاع تكلفة الرسالة من 47 إلى 57 ج.م، وانخفاض CTR إلى 0.53%.</li>
+                            <li><span class="text-red-600">الأزمة المتكررة:</span> 3 رسائل معلقة لأكثر من 3 ساعات بدون رد.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Log Item 4 (Account Stop) -->
+                <div class="relative log-item">
+                    <span class="absolute -right-[35px] top-1 bg-gray-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                        <i class="fa-solid fa-hand"></i>
+                    </span>
+                    <div class="bg-gray-50 rounded-lg p-4 border border-gray-200 shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-gray-800">توقف اضطراري للحملات (مشكلة ميزانية)</h4>
+                            <span class="text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded whitespace-nowrap">السبت - 1:00 ظهراً</span>
                         </div>
                         <p class="text-sm text-gray-600 mb-2">
-                            تم حل مشكلة الدفع وعودة الحملات. صرف انستقرام وصل 700 ج.م بـ 12 رسالة. تأخير ردود على 3 عملاء ليلاً.
+                            توقفت حملة انستقرام بعد الوصول لصرف 380 ج.م واستقرار تكلفة الرسالة عند (47 ج.م). الحساب توقف لعدم توفر رصيد، وتيك توك متوقف منذ الجمعة لنفس السبب. تم طلب تدخل الإدارة.
                         </p>
                     </div>
                 </div>
 
-                <!-- Log Items 4, 3, 2, 1 hidden for brevity in this view, but logically kept -->
-                <div class="relative opacity-60">
-                    <span class="absolute -right-[35px] top-1 bg-gray-400 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white">
-                        <i class="fa-solid fa-history"></i>
+                <!-- Log Item 3 (Morning Update) -->
+                <div class="relative log-item">
+                    <span class="absolute -right-[35px] top-1 bg-green-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
                     </span>
-                    <div class="bg-gray-50 rounded-lg p-3 text-center">
-                        <p class="text-sm text-gray-500 italic">... التحديثات السابقة (توقف الحسابات، وتعديل الاستهداف) محفوظة في السجلات ...</p>
+                    <div class="bg-green-50 rounded-lg p-4 border border-green-200 shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-green-800">تحسن الأداء وظهور أزمة استجابة المبيعات</h4>
+                            <span class="text-xs font-bold bg-green-200 text-green-800 px-2 py-1 rounded whitespace-nowrap">السبت - 6:00 صباحاً</span>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-2">
+                            انخفاض ممتاز في تكلفة الرسالة إلى 47 ج.م (الإجمالي 8 رسائل)، وارتفاع CTR إلى 0.79%.
+                        </p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mt-2">
+                            <li><strong>الاعتراضات:</strong> استمرار سؤال العملاء عن الاعتماد وموقع الأكاديمية.</li>
+                            <li><span class="text-red-600 font-bold">أزمة:</span> تأخير في الرد على 3 عملاء (منهم 2 مر عليهم أكثر من 4 ساعات).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Log Item 2 (First Midnight Update) -->
+                <div class="relative log-item">
+                    <span class="absolute -right-[35px] top-1 bg-blue-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </span>
+                    <div class="bg-blue-50 rounded-lg p-4 border border-blue-200 shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-blue-800">تحليل الأداء بعد 9 ساعات من الإطلاق</h4>
+                            <span class="text-xs font-bold bg-blue-200 text-blue-800 px-2 py-1 rounded whitespace-nowrap">السبت - 12:00 صباحاً</span>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-2">
+                            الوصول إلى 5 رسائل بتكلفة 62 ج.م للرسالة.
+                        </p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside mt-2">
+                            <li><strong>التفاعل:</strong> 40% (2 متفاعلين من 5).</li>
+                            <li><strong>الاعتراض الرئيسي:</strong> "الاعتماد" (أكاديمية النخبة).</li>
+                            <li><strong>فرصة قوية:</strong> عميل مهتم بالماجستير والتقسيط.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Log Item 1 (Initial Strategy) -->
+                <div class="relative log-item">
+                    <span class="absolute -right-[35px] top-1 bg-brand-500 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs border-4 border-white shadow-sm">
+                        <i class="fa-solid fa-wrench"></i>
+                    </span>
+                    <div class="bg-brand-50 rounded-lg p-4 border border-brand-200 shadow-sm">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-brand-800">تعديل الاستهداف الجذري وبداية الحملة</h4>
+                            <span class="text-xs font-bold bg-brand-200 text-brand-800 px-2 py-1 rounded whitespace-nowrap">الجمعة - (بداية الحملة)</span>
+                        </div>
+                        <p class="text-sm text-gray-700 mb-2">
+                            بعد صرف 111 ج.م، تم استقبال رسالة من عميل غير مستهدف (هندي الجنسية). تم التدخل الفوري لتحسين الجودة.
+                        </p>
+                        <div class="flex gap-2 text-xs font-semibold mt-2">
+                            <span class="bg-purple-100 text-purple-700 px-2 py-1 rounded">حصر على iOS (السعودية)</span>
+                            <span class="bg-red-100 text-red-700 px-2 py-1 rounded">إغلاق Audience Network</span>
+                        </div>
                     </div>
                 </div>
 
@@ -282,4 +347,3 @@
 </html>
 
 
-                        
